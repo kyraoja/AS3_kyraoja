@@ -1,33 +1,4 @@
-/* Stylesheet */
-.grid_1 { width: 6.5%; } /* 65px/1000px = 0.065px */
-.grid_2 { width: 15%; } /* 150px/1000px =  0.15px */
-.grid_3 { width: 23.5%; } /* 235px/1000px = 0.235px */
-.grid_4 { width: 32%; } /* 320px/1000px = 0.32px */
-.grid_5 { width: 40.5%; } /* 405px/1000px = 0.405px */
-.grid_6 { width: 49%; } /* 490px/1000px = 0.49px */
-.grid_7 { width: 57.5%; } /* 575px/1000px = 0.575px */
-.grid_8 { width: 66%; } /* 660px/1000px = 0.66px */
-.grid_9 { width: 74.5%; } /* 745px/1000px = 0.745px */
-.grid_10 { width: 83%; } /* 830px/1000px = 0.83px */
-.grid_11 { width: 91.5%; } /* 915px/1000px = 0.915px */
-.grid_12 { width: 100%; } /* 1000px/1000px = 1 */
 
-.grid_1,
-.grid_2,
-.grid_3,
-.grid_4,
-.grid_5,
-.grid_6,
-.grid_7,
-.grid_8,
-.grid_9,
-.grid_10,
-.grid_11,
-.grid_12 {
-	margin: 0 2% 1% 0;
-	float: left;
-	display: block;
-}
 
 .alpha{margin-left:0;}
 .omega{margin-right:0;}
@@ -39,10 +10,16 @@
 	
 }
 
+
+
 .clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}.clearfix:after{clear:both;content:' ';display:block;font-size:0;line-height:0;visibility:hidden;width:0;height:0}* html .clearfix,*:first-child+html .clearfix{zoom:1}
 
 
+
+
+
 /*style.css*/
+/*global*/
 
 /*global*/
 
@@ -57,10 +34,10 @@ a {
 	text-decoration: none;
 }
 
-img { 
-
+img, object {
 	max-width: 100%;
 }
+
 
 /*typography*/
 
@@ -83,86 +60,117 @@ h3 {
 
 
 
+/*media queries*/
 
-body{
-	background: url(../img/binding_light.png);
-	font-family: 'Noto Sans', sans-serif;
+/* Larger ----------- */
+@media screen and (max-width: 1024px) {
 
+
+#intro {
+	width: 100%; 
 }
-
-
-
-nav {
-	background: navy;	
-	height: 64px;
-	
+#intro-img {
+	display: none;
 }
-
-h1{
-	font-size: 55px;
+#intro h1 {
+	margin:  0 0 5% 0;
+}
+#logo {
+	width: 100%;
 	text-align: center;
-	padding: 40px 0px 0px 0px;
 }
 
-p{
-	font-size: 15px;
-	
+#logo object {
+	max-width:  55%;
+}
+#nav {
+	width: 100%;
+}
+#nav ul {
+	margin: 0;
 }
 
-
-li{
-	list-style: none;
-	text-align:center;
-	display: inline;
-	margin: 40px;
-	
-}
-
-img{
-	height:auto;
-	width: 390px;
-	padding: 25px 10px 25px 0px;
-}
-	
-
-a{
-	color:#fff;
-	text-decoration:none;
-}
-
-footer{
-	font-size: 10px;
-	padding: 25px 0px 20px 0px;
-	text-align:center;
-}
-#rival{
-	clear:left;
+#nav ul li {
+	float: left;
+	margin: 5% 0 0 0;
+	}
+	#nav ul li.about {
+		width: 15%;
+	}
+	#nav ul li.pricing {
+		width: 35%;
+	}
+	#nav ul li.locations {
+		width: 25%;
+	}
+	#nav ul li.contact {
+		width: 25%;
+		margin: 5% 0 2% 0;
 	}
 
-#russell{
-	height: 460px;
-	width: auto;
-	margin-top: 10px;
-	padding: 15px 0px 15px 0px;
-}
 
-#qb{
-	margin-left:-30px;
-	padding: 0px 0px 15px 0px;
-	
-}
-
-#id{
-	height:auto;
-	width: 150;	
-}
-
-#who{
-	padding: 30px 0px 0px 10px;	
-}
-
-#who2{
-	padding: 0px 0px 0px 10px;
 }
 
 
+
+
+/* Smaller ----------- */
+@media screen and (max-width : 650px) {
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+	width:100%;
+}
+#logo object {
+	max-width: 60%;
+}
+#nav ul {
+	margin: 5% 0;
+}
+
+#nav ul li a {
+	-webkit-user-select: none;
+	font-size: 1em;
+}
+
+#nav ul li {
+	float: left;
+	margin: 5% 0;
+	}
+	#nav ul  li.about {
+		width: 20%;
+		text-align: left;
+	}
+	#nav ul  li.pricing {
+		width: 55%;
+		text-align: center;
+	}
+	#nav ul  li.locations {
+		width: 25%;
+		text-align: right;
+	}
+	#nav ul  li.contact {
+		width: 100%;
+		margin: 0;
+		font-size: 1em;
+	}
+
+
+#intro, #about {
+	display: none;
+}
+#featured-cupcake, #new-cupcakes {
+	margin: 5% 0;
+}
+
+}
