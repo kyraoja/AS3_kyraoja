@@ -1,25 +1,22 @@
 /*grid.css*/
 /*
- Width: 1000px
- # Columns : 12 
- Column width: 65px
- Gutter : 20px 
+
 
 target / context = result
 
  */
-.grid_1 { width: 6.5%; } /* 65px/1000px = 0.065px */
-.grid_2 { width: 15%; } /* 150px/1000px =  0.15px */
-.grid_3 { width: 23.5%; } /* 235px/1000px = 0.235px */
-.grid_4 { width: 32%; } /* 320px/1000px = 0.32px */
-.grid_5 { width: 40.5%; } /* 405px/1000px = 0.405px */
-.grid_6 { width: 49%; } /* 490px/1000px = 0.49px */
-.grid_7 { width: 57.5%; } /* 575px/1000px = 0.575px */
-.grid_8 { width: 66%; } /* 660px/1000px = 0.66px */
-.grid_9 { width: 74.5%; } /* 745px/1000px = 0.745px */
-.grid_10 { width: 83%; } /* 830px/1000px = 0.83px */
-.grid_11 { width: 91.5%; } /* 915px/1000px = 0.915px */
-.grid_12 { width: 100%; } /* 1000px/1000px = 1 */
+.grid_1 { width: 6.770833%; } /* 65px/960px = 0.065px */
+.grid_2 { width: 15.625%; } /* 150px/960px =  0.15px */
+.grid_3 { width: 24.479167%; } /* 235px/960px = 0.235px */
+.grid_4 { width: 33.33333%; } /* 320px/960px = 0.32px */
+.grid_5 { width: 42.1875%; } /* 405px/960px = 0.405px */
+.grid_6 { width: 51.041667%; } /* 490px/960px = 0.49px */
+.grid_7 { width: 59.895833%; } /* 575px/960px = 0.575px */
+.grid_8 { width: 68.75%; } /* 660px/960px = 0.66px */
+.grid_9 { width: 77.604167%; } /* 745px/960px = 0.745px */
+.grid_10 { width: 86.458333%; } /* 830px/960px = 0.83px */
+.grid_11 { width: 95.3125%; } /* 915px/960px = 0.915px */
+.grid_12 { width: 100%; } /* 1000px/960px = 1 */
 
 .grid_1,
 .grid_2,
@@ -38,16 +35,13 @@ float: left;
 display: block;
 }
 
-.alpha{margin-left:0;}
-.omega{margin-right:0;}
-
 .container{
-width: 90%; /*width: 1000px;*/
-max-width: 1000px;
+width: 90%; /*width: 960px;*/
+max-width: 960px;
 margin: auto;
 }
 
-/*style.css*/
+
 /*global*/
 
 body {
@@ -76,18 +70,18 @@ font-size: .75em;
 }
 
 h1 {
-font-size: 1.750em;
-font-weight: 100;
-letter-spacing: -1.5px;
+font-size: 3em;
+font-weight: 100%;
+
 }
 
 h2 {
-font-weight: 100;
+font-weight: 100%;
 font-size: 1.500em;
 }
 
 h3 {
-font-weight: 100;
+font-weight: 100%;
 font-size: 1.125em;
 }
 
@@ -137,13 +131,8 @@ width: 390px;
 padding: 25px 10px 25px 0px;
 }
 
-a{
-color:#fff;
-text-decoration:none;
-}
-
 footer{
-font-size: 10px;
+font-size: 0.625em;
 padding: 25px 0px 20px 0px;
 text-align:center;
 }
@@ -155,7 +144,7 @@ clear:left;
 #russell{
 height: 460px;
 width: auto;
-margin-top: 10px;
+margin-top: 0.625em;
 padding: 15px 0px 15px 0px;
 }
 
@@ -166,7 +155,7 @@ padding: 0px 0px 15px 0px;
 
 #id{
 height:auto;
-width: 150;
+width: 9.375em;
 }
 
 #who{
@@ -177,116 +166,45 @@ padding: 30px 0px 0px 10px;
 padding: 0px 0px 0px 10px;
 }
 
+
+/* ALL LINKS */
+
+a{
+	color: #fff;
+	font-size: 1em;
+}
+
+
 /*media queries*/
-
-/* Larger ----------- */
-@media screen and (max-width: 1024px) {
-
-
-#intro {
-width: 100%; 
-}
-#intro-img {
-display: none;
-}
-#intro h1 {
-margin:  0 0 5% 0;
-}
-#logo {
-width: 100%;
-text-align: center;
-}
-
-#logo object {
-max-width:  55%;
-}
-#nav {
-width: 100%;
-}
-#nav ul {
-margin: 0;
-}
-
-#nav ul li {
-float: left;
-margin: 5% 0 0 0;
-}
-#nav ul li .franchise history {
-width: 15%;
-}
-#nav ul li.pricing {
-width: 35%;
-}
-#nav ul li.locations {
-width: 25%;
-}
-#nav ul li.contact {
-width: 25%;
-margin: 5% 0 2% 0;
-}
-
-
-}
+@media screen and ( max-width: 1024px ) {
+	body{
+		background: red;
+	}
+	
+} /* END OF DESKTOP */
 
 
 
-/* Smaller ----------- */
-@media screen and (max-width : 650px) {
+/* TABLET */
 
-.grid_1,
-.grid_2,
-.grid_3,
-.grid_4,
-.grid_5,
-.grid_6,
-.grid_7,
-.grid_8,
-.grid_9,
-.grid_10,
-.grid_11,
-.grid_12 {
-width:100%;
-}
-#logo object {
-max-width: 60%;
-}
-#nav ul {
-margin: 5% 0;
-}
-
-#nav ul li a {
--webkit-user-select: none;
-font-size: 1em;
-}
-
-#nav ul li {
-float: left;
-margin: 5% 0;
-}
-#nav ul  li.about {
-width: 20%;
-text-align: left;
-}
-#nav ul  li.pricing {
-width: 55%;
-text-align: center;
-}
-#nav ul  li.locations {
-width: 25%;
-text-align: right;
-}
-#nav ul  li.contact {
-width: 100%;
-margin: 0;
-font-size: 1em;
-}
+@media screen and ( max-width: 768px ) {
+	body{
+		background: green;
+	}
+	
+} /* END OF TABLET */
 
 
-#intro, #about {
-display: none;
-}
-#featured-cupcake, #new-cupcakes {
-margin: 5% 0;
-}
 
-}
+/* PHONE */
+
+@media screen and ( max-width: 480px ) {
+	body{
+		background: blue;
+	}
+	
+	aside{
+		float: none;
+	}
+	
+} /* END OF PHONE */
