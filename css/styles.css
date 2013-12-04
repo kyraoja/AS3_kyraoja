@@ -1,46 +1,3 @@
-/*grid.css*/
-/*
-
-
-target / context = result
-
- */
-.grid_1 { width: 6.770833%; } /* 65px/960px = 0.065px */
-.grid_2 { width: 15.625%; } /* 150px/960px =  0.15px */
-.grid_3 { width: 24.479167%; } /* 235px/960px = 0.235px */
-.grid_4 { width: 33.33333%; } /* 320px/960px = 0.32px */
-.grid_5 { width: 42.1875%; } /* 405px/960px = 0.405px */
-.grid_6 { width: 51.041667%; } /* 490px/960px = 0.49px */
-.grid_7 { width: 59.895833%; } /* 575px/960px = 0.575px */
-.grid_8 { width: 68.75%; } /* 660px/960px = 0.66px */
-.grid_9 { width: 77.604167%; } /* 745px/960px = 0.745px */
-.grid_10 { width: 86.458333%; } /* 830px/960px = 0.83px */
-.grid_11 { width: 95.3125%; } /* 915px/960px = 0.915px */
-.grid_12 { width: 100%; } /* 1000px/960px = 1 */
-
-.grid_1,
-.grid_2,
-.grid_3,
-.grid_4,
-.grid_5,
-.grid_6,
-.grid_7,
-.grid_8,
-.grid_9,
-.grid_10,
-.grid_11,
-.grid_12 {
-margin: 0 2% 1% 0;
-float: left;
-display: block;
-}
-
-.container{
-width: 90%; /*width: 960px;*/
-max-width: 960px;
-margin: auto;
-}
-
 
 /*global*/
 
@@ -66,13 +23,15 @@ text-decoration:none;
 /*typography*/
 
 p{
-font-size: .75em;	
+font-size: .75em;
+
 }
 
 h1 {
 font-size: 3em;
 font-weight: 100%;
-
+float: right;
+margin-top: 60px;
 }
 
 h2 {
@@ -87,10 +46,10 @@ font-size: 1.125em;
 
 nav{
 	background:navy;
-	height: 64px;
+	height: 64%;
 	left: 0;
 	top: 42px;
-	width: 960px;
+	width: 100%;
 	font-size: 1em;
 }
 
@@ -125,9 +84,10 @@ text-decoration: none;
 
 /*content*/
 
+
 img{
 height:auto;
-width: 390px;
+width: 100%;
 padding: 25px 10px 25px 0px;
 }
 
@@ -142,10 +102,10 @@ clear:left;
 }
 
 #russell{
-height: 460px;
-width: auto;
+
+width: 90%;
 margin-top: 0.625em;
-padding: 15px 0px 15px 0px;
+padding: 0 15% 0 0;
 }
 
 #qb{
@@ -155,7 +115,7 @@ padding: 0px 0px 15px 0px;
 
 #id{
 height:auto;
-width: 9.375em;
+width: 100%;
 }
 
 #who{
@@ -192,6 +152,10 @@ a{
 		background: green;
 	}
 	
+	h1 {
+		float: none;
+	}
+	
 } /* END OF TABLET */
 
 
@@ -199,12 +163,13 @@ a{
 /* PHONE */
 
 @media screen and ( max-width: 480px ) {
-	body{
-		background: blue;
+	body {
+		background: pink;
 	}
 	
-	aside{
+	h1 {
 		float: none;
 	}
+	
 	
 } /* END OF PHONE */
