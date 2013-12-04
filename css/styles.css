@@ -24,7 +24,7 @@ text-decoration:none;
 
 p{
 font-size: .75em;
-
+margin: 5px;
 }
 
 h1 {
@@ -109,7 +109,7 @@ padding: 0 15% 0 0;
 }
 
 #qb{
-margin-left:-30px;
+margin-left: 0;
 padding: 0px 0px 15px 0px;
 }
 
