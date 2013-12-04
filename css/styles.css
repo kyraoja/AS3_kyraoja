@@ -137,9 +137,7 @@ a{
 
 /*media queries*/
 @media screen and ( max-width: 1024px ) {
-	body{
-		background: red;
-	}
+
 	
 	h1 {
 		font-size: 2.5em;
@@ -157,9 +155,7 @@ a{
 /* TABLET */
 
 @media screen and ( max-width: 768px ) {
-	body{
-		background: green;
-	}
+
 	
 	h1 {
 		margin: 0;
@@ -179,9 +175,7 @@ a{
 /* PHONE */
 
 @media screen and ( max-width: 480px ) {
-	body {
-		background: pink;
-	}
+	
 	
 	h1 {
 		float: none;
